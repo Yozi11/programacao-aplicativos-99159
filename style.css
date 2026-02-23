@@ -1,0 +1,54 @@
+/* reset das configuraçao do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+    background-color: rgb(26, 45, 153);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7EFBdA3ZzPVAQImABBD_jXmEohADPyEIeA&s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    background-attachment: fixed;
+
+
+
+}
+h2 {
+    text-align: center;
+    font-size: 60px;
+
+}
+p {
+    text-align: justify;
+    font-size: 15px;
+   margin: 50px 20px;
+
+
+}
+
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
