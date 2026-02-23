@@ -20,6 +20,14 @@ body {
 
 
 }
+
+.idex {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7EFBdA3ZzPVAQImABBD_jXmEohADPyEIeA&s);
+}
+
+
+
+
 h2 {
     text-align: center;
     font-size: 60px;
@@ -51,4 +59,16 @@ button {
     cursor: pointer;
     padding: 5px 30px;
     border-radius: 30px;
+}
+
+ol {
+    padding: 30px auto;
+    text-align: center;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 15px;
+    font-weight: bold;
+    color: aquamarine;
 }
