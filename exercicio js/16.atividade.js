@@ -14,5 +14,9 @@ console.log(`Nome:${usuarioEncontra.nome}\nNota:${usuarioEncontra.nota}`)
 
 
 console.log("Mostre a media geral da turma.")
-const media = listaDeAlunos.reduce((total,media) => )
+const media = listaDeAlunos.reduce((total, media) => total + media.nota, 0)
+console.log(media)
+
+
+
 
