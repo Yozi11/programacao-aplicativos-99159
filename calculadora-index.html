@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dois Números - Seu Web App Moderno</title>
+    
+    <link href="https://br.freepik.com/vetores-premium/modelo-de-logotipo-de-vetor-de-icone-de-calculadora_45136697.htm" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style-calculadora.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <div class="logo-icon">+−×÷</div>
+            <div class="logo-text">
+                <h1>Calculadora</h1>
+                <span>de Dois Números</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="calculator-card">
+            <h2>Faça Seus Cálculos Rapidamente</h2>
+            
+            <div class="input-group">
+                <label for="numero1">Primeiro Número:</label>
+                <input type="number" id="numero1" placeholder="Digite um número">
+            </div>
+
+            <div class="input-group">
+                <label for="numero2">Segundo Número:</label>
+                <input type="number" id="numero2" placeholder="Digite outro número">
+            </div>
+
+            <button onclick="calcularResultados()">Calcular</button>
+
+            <div id="areaResultado" class="resultado"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2024 Ferramenta de Cálculos - Todos os direitos reservados.</p>
+    </footer
+
+    <script src="script-calculadora.js"></script>
+</body>
+</html>

@@ -29,3 +29,4 @@ function gerarTabuada() {
 
 const botaoGerar = document.getElementById("btgerar");
 botaoGerar.addEventListener("click", gerarTabuada);
+
