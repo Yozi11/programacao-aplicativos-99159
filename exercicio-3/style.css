@@ -1,0 +1,165 @@
+/* --- Importando uma fonte moderna e limpa --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- UX/UI: Fundo Institucional --- */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Um gradiente escuro e elegante (azul marinho) para dar ar de sistema oficial */
+    background: linear-gradient(135deg, #0b192c 0%, #1a365d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Evita colar nas bordas em celulares */
+}
+
+/* --- UX/UI: O Cartão Principal (O "Documento") --- */
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    /* Sombra mais suave e espalhada para dar profundidade contra o fundo escuro */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Uma borda superior verde e amarela para dar a identidade visual */
+    border-top: 6px solid #009c3b; 
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 50%;
+    height: 6px;
+    background-color: #ffdf00;
+    border-top-right-radius: 12px;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #1a365d; /* Azul oficial */
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* --- UX/UI: Área de Digitação --- */
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    text-align: center; /* Centraliza o número, comum em sistemas oficiais */
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+/* Efeito ao clicar para digitar */
+input:focus {
+    border-color: #009c3b;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 156, 59, 0.1);
+}
+
+/* --- UX/UI: O Botão "Confirma" --- */
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #009c3b; /* Verde Urna */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #007a2e; /* Verde mais escuro no hover */
+}
+
+button:active {
+    transform: scale(0.96); /* Sensação física de apertar o botão */
+}
+
+/* --- UX/UI: Caixas de Feedback --- */
+.resultado-box {
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.escondido {
+    display: none;
+}
+
+/* Animação para a caixa aparecer pulando suavemente */
+.resultado-box:not(.escondido) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cores Semânticas Oficiais */
+.proibido {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.opcional {
+    background-color: #fffbeb;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
+.obrigatorio {
+    background-color: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.erro {
+    background-color: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
