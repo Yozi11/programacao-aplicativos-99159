@@ -1,0 +1,14 @@
+.footer-pokedex {
+    background-color: #222224;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.footer-pokedex p {
+    margin: 0;
+    font-size: 14px;
+}
