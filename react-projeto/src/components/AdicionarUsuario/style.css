@@ -1,0 +1,95 @@
+/* Container principal do formulário */
+.formulario {
+  max-width: 450px;
+  margin: 40px auto; /* Centraliza na tela com um respiro no topo */
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 12px; /* Bordas arredondadas modernas */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Sombra suave para dar efeito de "cartão" */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+/* Títulos */
+.formulario h2 {
+  margin-top: 0;
+  color: #005baa; /* Azul escuro corporativo */
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+/* Layout do formulário usando Flexbox */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaçamento automático entre os campos e o botão */
+}
+
+/* Estilo dos campos de texto (inputs) */
+.formulario input {
+  padding: 14px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao clicar no campo de texto (foco) */
+.formulario input:focus {
+  outline: none;
+  border-color: #005baa;
+  box-shadow: 0 0 0 3px rgba(0, 91, 170, 0.15); /* Efeito de brilho azul em volta */
+}
+
+/* Estilo do botão */
+.formulario button {
+  padding: 14px;
+  background-color: #005baa;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse e ao clicar no botão */
+.formulario button:hover {
+  background-color: #004685; /* Azul um pouco mais escuro */
+}
+
+.formulario button:active {
+  transform: scale(0.98); /* Leve "afundada" ao clicar */
+}
+
+/* Linha divisória */
+.formulario hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 32px 0;
+}
+
+/* Lista de usuários */
+.formulario ul {
+  list-style-type: none; /* Remove as bolinhas padrão da lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cada item da lista de usuários */
+.formulario li {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  word-break: break-all; /* Impede que e-mails longos quebrem o layout */
+}

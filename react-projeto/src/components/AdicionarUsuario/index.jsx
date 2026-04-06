@@ -8,12 +8,12 @@ export default function AdicionarUsuario() {
 
     const handlerAdicionarUsuario = (event) => {
         // evitando que pagina recarregue ao mudar algum elemeto na pagina 
-        event.prevenDefault()
+        event.preventDefault();
         if (nome && email) {
-            setListaDeUsuarios([...listaDeUsuarios, {nome,email}])
+            setListaDeUsuarios([...listaDeUsuarios, {nome,email}]);
 
-            setNome('')
-            setEmail('')
+            setNome('');
+            setEmail('');
             
         }
     }

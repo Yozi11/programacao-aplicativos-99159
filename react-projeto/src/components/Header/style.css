@@ -1,0 +1,26 @@
+/* Estilo principal do cabeçalho */
+.header {
+  background-color: #005baa; /* Azul corporativo para combinar com o Footer e Botão */
+  color: #ffffff; /* Texto em branco */
+  padding: 20px 32px; /* Espaçamento interno (topo/baixo e laterais) */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para separar o cabeçalho do resto do site */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Descomente as linhas abaixo se quiser que o cabeçalho fique fixo no topo ao rolar a página */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 100; */
+}
+
+/* Estilo do título "Sistema de clientes" */
+.header div {
+  font-size: 24px;
+  font-weight: 700; /* Deixa o texto em negrito */
+  letter-spacing: 0.5px; /* Leve espaçamento entre as letras para um visual mais sofisticado */
+  margin: 0;
+}

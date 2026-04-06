@@ -1,0 +1,22 @@
+/* Estilo principal do container do rodapé */
+.footer {
+  background-color: #005baa; /* Azul padrão corporativo (estilo SENAI) */
+  color: #ffffff; /* Cor do texto em branco para contraste */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 24px 16px; /* Espaçamento interno superior/inferior e lateral */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  
+  /* Descomente as linhas abaixo se quiser que o footer fique fixo na parte inferior da tela */
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
+}
+
+/* Estilo do texto dentro do rodapé */
+.footer p {
+  margin: 0; /* Remove a margem padrão do navegador */
+  font-size: 14px; /* Tamanho da fonte amigável para leitura */
+  line-height: 1.6; /* Espaçamento entre as linhas (para o <br />) */
+}
